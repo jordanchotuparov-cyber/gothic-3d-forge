@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Obsidian Forge | 3D Gothic Art</title>
+    <style>
+        /* Основен Готик Стил */
+        body { 
+            background-color: #050505; 
+            color: #e0e0e0; 
+            font-family: 'Georgia', serif; 
+            margin: 0; 
+            padding: 0;
+            background-image: linear-gradient(rgba(139, 0, 0, 0.05) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(139, 0, 0, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        header { 
+            text-align: center; 
+            padding: 60px 20px; 
+            border-bottom: 2px solid #8b0000;
+            background: rgba(10, 10, 10, 0.9);
+            box-shadow: 0 5px 20px rgba(139, 0, 0, 0.3);
+        }
+
+        h1 { 
+            color: #8b0000; 
+            text-transform: uppercase; 
+            letter-spacing: 6px; 
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .description {
+            max-width: 700px;
+            margin: 20px auto 0;
+            font-style: italic;
+            color: #aaa;
+            line-height: 1.6;
+        }
+
+        /* Контейнер за продуктите */
+        .shop-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 40px; 
+            max-width: 1100px; 
+            margin: 50px auto; 
+            padding: 0 20px;
+        }
+
+        .product-card { 
+            background: #0f0f0f; 
+            border: 1px solid #222; 
+            padding: 20px; 
+            text-align: center; 
+            position: relative;
+            transition: 0.4s;
+        }
+
+        .product-card:hover { 
+            border-color: #8b0000; 
+            transform: scale(1.02);
+            box-shadow: 0 0 25px rgba(139, 0, 0, 0.2);
+        }
+
+        .product-image { 
+            width: 100%; 
+            height: 250px; 
+            background: #1a1a1a; /* Място за твоята снимка */
+            object-fit: cover; 
+            border: 1px solid #333;
+            margin-bottom: 15px;
+        }
+
+        h3 { color: #8b0000; margin: 10px 0; letter-spacing: 1px; }
+
+        .price { 
+            font-size: 1.4rem; 
+            color: #fff; 
+            margin: 15px 0; 
+            font-weight: bold;
+        }
+
+        /* Бутон за поръчка */
+        .order-btn { 
+            display: block; 
+            background: #8b0000; 
+            color: #000; 
+            padding: 12px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .order-btn:hover { 
+            background: #ff0000; 
+            box-shadow: 0 0 15px #ff0000;
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 40px; 
+            color: #444; 
+            font-size: 0.9rem;
+            border-top: 1px solid #111;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Obsidian Forge</h1>
+    <p class="description">
+        Добре дошли в мястото, където готическата естетика среща модерната технология. 
+        Всеки модел е прецизно принтиран, слой по слой, за да вдъхне живот на вашите най-тъмни фантазии.
+    </p>
+</header>
+
+<div class="shop-grid">
+    <div class="product-card">
+        <img src="skull.jpg" alt="Gothic Skull" class="product-image">
+        <h3>Детайлен Готически Череп</h3>
+        <p>3D принт с висока резолюция и костна текстура.</p>
+        <div class="price">29.90 лв.</div>
+        <a href="#" class="order-btn">Поръчай Сега</a>
+    </div>
+
+    <div class="product-card">
+        <img src="gargoyle.jpg" alt="Gargoyle" class="product-image">
+        <h3>Гаргойл Стойка</h3>
+        <p>Масивна фигура, подходяща за декорация или подпора.</p>
+        <div class="price">45.00 лв.</div>
+        <a href="#" class="order-btn">Поръчай Сега</a>
+    </div>
+
+    <div class="product-card">
+        <img src="crypt-box.jpg" alt="Crypt Box" class="product-image">
+        <h3>Кутия "Крипта"</h3>
+        <p>Функционална кутия за бижута с готически орнаменти.</p>
+        <div class="price">35.00 лв.</div>
+        <a href="#" class="order-btn">Поръчай Сега</a>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 jit183260-spec | Created via GitHub Pages
+</footer>
+
+</body>
+</html>
